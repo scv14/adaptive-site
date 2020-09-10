@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#8D96BD;
+    font-family: 'Ubuntu', sans-serif;
+}
+.mobileNavigation{
+    display: none;
+}
+h1{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+body{
+    background-color: #fff;
+    color: #070707;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+section{
+    width: 70%;
+    margin: 0 auto;
+}
+.headerMenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #828282;
+}
+.headerMenuLink:focus{
+    color: black;
+}
+
+.headerMenuLink{
+        color: #828282;
+        font-family: 'Roboto', sans-serif;
+        line-height: 22px;
+        font-weight: 700;
+        font-size: 18px;
+}
+
+.headerMenuLink:hover{
+    border-bottom: 1px solid #8D96BD;
+}
+.headerMenuLinkActive:hover{
+    border-bottom: none;
+}
+.introTextMenuIcon{
+    display: none;
+}
+.introText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #000000;
+}
+.introText h2{
+    font-size: 47.3px;
+}
+.introDecription{
+    font-size: 18px;
+    font-weight: 500;
+}
+.introLanguage{
+    transform: rotate(-90deg) translateY(150%);
+    font-weight: 700;
+}
+.introLanguageActive{
+    color: #000000;
+}
+.introImgDesktop{
+    width: 100%;
+    height: auto;
+}
+.introImg{
+    padding-bottom: 80px;
+}
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #f6f6f6;
+}
+p{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.aboutMeText{
+    margin-top: 15px;
+}
+.skills{
+    padding: 90px 0;
+}
+.instruments{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.instrumentImg{
+    width: 80px;
+    margin-bottom: 24px;
+}
+.instrument{
+    width: 20%;
+
+}
+.instrumentName{
+    font-size: 14px;
+    font-weight: 700;
+    color: #828282;
+    margin-bottom: 40px;
+
+}
+.fa-star{
+    color: #e5e5e5;
+}
+.fa-staraActive{
+    color: #000000;
+}
+h3{
+    font-size: 18px;
+    color: #070707;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.portfolio{
+    background-color: #f6f6f6;
+    padding: 100px 0;
+}
+.portfolioItem{
+    width: 100%;
+}
+.portfolioItemText:hover{
+    text-decoration-line: underline;
+
+}
+.portfolioItemText{
+    margin: 44px 0 90px 0;
+}
+.portfolioImg{
+    max-width: 100%;
+}
+footer{
+    padding: 100px 0;
+}
+.btnMessage{
+    background-color: black;
+    color: #fff;
+    border-radius: 40px;
+    width: 180px;
+    outline: none ;
+    font-size: 18px;
+    border: none;
+    height: 40px;
+    margin-top: 30px;
+}
+.social{
+    width: 300PX;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 40px 0;
+}
+.socialImg{
+    color: #000000;
+    font-size: 40px;
+}
+.copyright{
+    color: #828282;
+}
+.footerContacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introImgMobile{
+    display: none;
+}
+.introTextMenu{
+    display: none;
+}
+
+@media screen and (max-width:576px){
+    .headerMenu{
+        display: none;
+    }
+    .introTextMenuIcon{
+        display: block;
+        background-color: #fff;
+        border: none;
+    }
+    .btnFa{
+        color: #000000;
+        font-size: 33px;
+    }
+    .introLanguage{
+        display: none;
+    }
+    .introText{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .introDecription{
+        padding-top: 30px;
+    }
+    .introImgDesktop{
+        display: none;
+    }
+    .introImgMobile{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    section{
+        width: 90%;
+    }
+    .portfolio{
+        padding: 70px 0;
+    }
+    .aboutMe{
+        padding: 70px 0;
+    }
+    .intro{
+        padding-bottom: 70px 0;
+    }
+    .footer{
+        padding: 70px 0;
+    }
+    .introTextHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .instrument{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .instruments{
+        flex-direction: column;
+    }
+    .fa-times{
+        color: #828282;
+        font-size: 22px;
+    }
+    .headerMenuItem{
+        padding-top: 40px;
+    }
+    .headerMenuLink{
+        font-size: 22px;
+        line-height: 42px;
+    }
+    .introLanguageMobile a{
+    font-size: 24px;
+    }
+    .introLanguageMobile{
+        transform: rotate(-90deg) translateX(50%) translateY(200%);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        float: right;
+        font-weight: 700;
+    }
+    .fsaf{
+        background-color: #fff;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        width: 100%;
+    }
+    .mobileNavigationHeader{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobileNavigation{
+        height: 100vh;
+        display: block;
+        position: fixed;
+        width: 80%;
+        background-color: #fff;
+        z-index: 2;
+    }
+    
+    .Menu{
+        padding: 0;
+    }
+    .close{
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width:768px){
+    section{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
